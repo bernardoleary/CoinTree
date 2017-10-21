@@ -2,7 +2,10 @@
     $.ajax({
         type: 'GET',
         url: window.location.protocol + '//' + window.location.hostname + ':' + location.port + '/api/price',
-        success: function (data) { $('#price').html(data.ask) }
+        success: function (data) {
+            $('#currentPrice').html(data.current.ask)
+            $('#previousPrice').html(data.previous.ask)
+        }
     });
 }
 auto_load();
