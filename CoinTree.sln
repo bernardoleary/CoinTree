@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoinTree", "CoinTree\CoinTree.csproj", "{D0EFF8DF-A3FB-4923-A393-35E9806BB679}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoinTree.Tests", "CoinTree.Tests\CoinTree.Tests.csproj", "{F3A270D7-3B6A-427C-AC5C-23A7A40718B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0EFF8DF-A3FB-4923-A393-35E9806BB679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0EFF8DF-A3FB-4923-A393-35E9806BB679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0EFF8DF-A3FB-4923-A393-35E9806BB679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0EFF8DF-A3FB-4923-A393-35E9806BB679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3A270D7-3B6A-427C-AC5C-23A7A40718B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3A270D7-3B6A-427C-AC5C-23A7A40718B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3A270D7-3B6A-427C-AC5C-23A7A40718B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3A270D7-3B6A-427C-AC5C-23A7A40718B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {859578F6-D108-425C-9647-1D5EE969F549}
+	EndGlobalSection
+EndGlobal
