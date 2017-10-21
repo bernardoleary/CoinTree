@@ -12,5 +12,7 @@ namespace CoinTree.Models
         public Price Previous { get; set; }
         [JsonProperty("current")]
         public Price Current { get; set; }
+        [JsonProperty("diff")]
+        public Diff PercentageDiff { get; set; }
     }
 }
