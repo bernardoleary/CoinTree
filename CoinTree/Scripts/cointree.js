@@ -1,17 +1,20 @@
-﻿function auto_load(){
+﻿function autoLoad() {
     $.ajax({
         type: 'GET',
         url: window.location.protocol + '//' + window.location.hostname + ':' + location.port + '/api/price',
         success: function (data) {
-            $('#currentPrice').html(data.current.ask);
-            $('#percentageChange').html(data.diff.percentagediffask);
+            $('#currentPrice').html('Asking price: ' + data.current.ask);
+            $('#percentageChange').html('Percentage update: ' + data.diff.percentagediffask);
+            priceData = data;
+            customerPriceUpdate();
         }
     });
 }
-$('#customerPrice').change(function (event) {
+function customerPriceUpdate() {
     $('#customerPriceStatus').html(
         parseFloat(priceData.current.ask) >
-        parseFloat($('#customerPriceStatus').html) ? 'price too low' : '');
-});
-auto_load();
-setInterval(auto_load, 30000);
+            parseFloat($('#customerPrice').val()) ? 'Price is too low sorry.' : '');
+}
+autoLoad();
+setInterval(autoLoad, 30000);
+var priceData;

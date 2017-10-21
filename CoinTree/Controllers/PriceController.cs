@@ -16,7 +16,9 @@ namespace CoinTree.Controllers
 {
     public class PriceController : ApiController
     {
-        // This is only used when the application starts
+        /// <summary>
+        /// Get latest BTC price details.
+        /// </summary>
         public async System.Threading.Tasks.Task<PriceDiff> GetAsync()
         {
             var priceHelper = new PriceHelper();
