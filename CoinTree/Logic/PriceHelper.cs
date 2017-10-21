@@ -59,9 +59,9 @@ namespace CoinTree.Logic
 
         private string GetPrecentageChange(string priceCurrent, string pricePrevious)
         {
-            var percentage = Convert.ToDouble(priceCurrent) / Convert.ToDouble(pricePrevious);
-            var diff = 1 - percentage;
-            return string.Format("{0:0.00}", diff*100);
+            var increase = Convert.ToDouble(priceCurrent) - Convert.ToDouble(pricePrevious);
+            var diff = increase / Convert.ToDouble(pricePrevious);
+            return string.Format("{0:0.00}", diff * 100);
         }
 
         private void SetPreviousPrice(Price current)
